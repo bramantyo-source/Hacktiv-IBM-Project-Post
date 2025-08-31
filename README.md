@@ -4,7 +4,7 @@ cleaning, EDA, dengan dukungan IBM Granite/watsonx.ai (Colab + Slides).
 📌 Tujuan
 Menghasilkan dataset terintegrasi tingkat kecamatan untuk indikator: tenaga gizi, stunting, malnutrisi, anemia, ASI eksklusif, imunisasi, pelayanan ibu hamil/bayi/balita, dan indikator terkait lainnya.
 
-##🧩 Ringkasan Metodologi
+## 🧩 Ringkasan Metodologi
 1) **Normalisasi**: deteksi header `Kecamatan`, bersihkan kolom kosong/`Unnamed`, normalisasi desimal (`,`→`.`), persen → 0–100.  
 2) **Merging**: *outer join* di `Kecamatan`, prefix nama kolom berdasar file/sheet untuk hindari tabrakan.  
 3) **Validasi**: persen out-of-range di-*neutralize* (`NaN`), drop baris agregat **Total/Jumlah/Kecamatan**.  
